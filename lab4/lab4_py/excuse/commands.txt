@@ -1,0 +1,18 @@
+$ gcc -static -no-pie -w -g target.c -o target.amd64
+$ gdb -q target.amd64 -x breaks64.gdb
+gef➤ inferior 1
+
+
+aaaabbb
+0x08e70cf1e61b2200
+
+aaaabbbb
+0x08e70cf1e61b2200
+
+aaaabbbbc
+0x08e70cf1e61b0063
+
+aaaabbbbcc
+0x08e70cf1e6006363
+
+
