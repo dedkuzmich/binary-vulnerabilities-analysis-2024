@@ -26,7 +26,7 @@
         global  WinMain
 
 
-;; Save and restore volatile (preserved) registers excluding rsp, rbp
+;; Save and restore non-volatile (preserved) registers excluding rsp, rbp
         %macro  save_regs 0
         push    rbx
         push    rsi
